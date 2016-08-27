@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fbhack.newsflash.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/spritz_view"
+        android:layout_toRightOf="@+id/service"
+        android:layout_marginTop="77dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start service"
+        android:id="@+id/service"
+        android:layout_gravity="center"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+
+    <com.fbhack.newsflash.SpritzerTextView
+        android:id = "@+id/spritz_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:typeface="monospace"
+        android:background="@drawable/spritz_bg"/>
+
+</RelativeLayout>
+
+
